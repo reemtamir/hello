@@ -162,7 +162,7 @@ span {
 }
 .game-2 {
   position: relative;
-  width: 30%;
+
   flex-grow: 2;
   animation: game-2;
   animation-duration: 5s;

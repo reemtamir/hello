@@ -87,7 +87,7 @@ main {
 
 .header-img {
   position: relative;
-  width: 400px;
+  width: 60%;
   border-radius: 50%;
   animation-name: header-img;
   animation-duration: 4s;
@@ -127,7 +127,7 @@ span {
 .click {
   font-family: 'Permanent Marker', cursive;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .games-flex {
   height: 300px;
@@ -162,7 +162,7 @@ span {
 }
 .game-2 {
   position: relative;
-
+  width: 30%;
   flex-grow: 2;
   animation: game-2;
   animation-duration: 5s;

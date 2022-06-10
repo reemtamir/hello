@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re'em</title>
+    <link rel="icon" href="favicon/favicon (6).ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rubik+Moonrocks&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onmouseover="changeColor()" onmousemove="changeColor()">
+    <header>
+      <div class="header">
+        <h1>I'm Re'em</h1>
+
+        <h2>a programmer</h2>
+        <img class="header-img" src="img/programmer.jpeg" alt="programmer" />
+      </div>
+    </header>
+
+    <hr />
+    <main>
+      <div
+        class="carousel slide hobbies"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>I enjoy traveling to new places 🛫</p>
+          </div>
+          <div class="carousel-item">
+            <p>working out at the jym 💪</p>
+          </div>
+
+          <div class="carousel-item">
+            <p>hanging with my friends 🍺</p>
+          </div>
+
+          <div class="carousel-item">
+            <p>and of course: <span> C-O-D-I-N-G 👩‍💻</span></p>
+          </div>
+
+          <div class="carousel-item">
+            <iframe
+              class="gif"
+              src="https://giphy.com/embed/juua9i2c2fA0AIp2iq"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <h2 class="click" onclick="showGame()">CLICK ME</h2>
+      <div class="games-flex hidden">
+        <p class="game-p">Click on img to play a game</p>
+        <a
+          class="game-1"
+          href="https://reemtamir.github.io/Drum-Kit/"
+          target="_blank"
+          ><img src="img/drum.png" alt="drum game img"
+        /></a>
+        <a
+          class="game-2"
+          href="https://reemtamir.github.io/memory-Monsters/"
+          target="_blank"
+          ><img src="img/memory.png" alt="memory game img"
+        /></a>
+      </div>
+    </main>
+
+    <hr />
+    <div class="footer">
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><img src="img/linkedin-logo.png" alt="linkedin-logo"
+      /></a>
+      <a href=""><img src="img/github-sign.png" alt="github-logo" /></a>
+      <a href="https://www.instagram.com/reem_tamir/" target="_blank"
+        ><img src="img/instagram.png" alt="instagram-logo"
+      /></a>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

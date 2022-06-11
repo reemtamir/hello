@@ -241,6 +241,12 @@ span {
   height: 100%;
   object-fit: cover;
 }
+.box span img:hover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
 .copyright {
   color: #12a5a5;
   font-size: 0.75rem;

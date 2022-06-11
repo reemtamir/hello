@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect</title>
+    <link rel="icon" href="favicon/favicon (6).ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      action="https://formspree.io/f/mrgjjgoj"
+      method="post"
+      autocomplete="off"
+    >
+      <div class="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="last-name"> Last Name:</label>
+        <input type="text" name="last-name" id="last-name" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Phone Number:</label>
+        <input type="number" name="phone" id="phone" />
+        <textarea
+          style="direction: rtl; margin-top: 10px; font-size: 20px"
+          name="comment"
+          rows="7"
+          cols="22"
+        >
+      כתוב משהו...</textarea
+        >
+      </div>
+      <button class="btn">Send</button>
+    </form>
+    <div id="balloon-container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

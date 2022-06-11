@@ -102,7 +102,9 @@ main {
   0% {
     left: -1550px;
   }
-
+  80% {
+    transform: rotate(360deg);
+  }
   100% {
     left: 0px;
   }

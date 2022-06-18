@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -5,25 +6,27 @@ body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
   width: 30%;
   margin: auto;
 }
+
 h2 {
   color: #66bfbf;
   font-size: 2.5rem;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
 main {
   width: 70%;
   margin: auto;
 }
 
 .header {
-  width: 80%px;
+  width: 80% px;
   height: 20%;
-
   text-align: center;
   /* display: flex; */
 }
@@ -32,13 +35,42 @@ main {
   font-size: 5rem;
   top: 30px;
   position: relative;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   color: #47b5ff;
-  animation-name: header-h1;
-  animation-duration: 4s;
+  -webkit-animation-name: header-h1;
+          animation-name: header-h1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   margin-bottom: 40px;
   font-weight: 900;
 }
+
+@-webkit-keyframes header-h1 {
+  0% {
+    top: -250px;
+    color: antiquewhite;
+  }
+  15% {
+    color: aqua;
+  }
+  25% {
+    color: rgb(196, 196, 19);
+  }
+  45% {
+    color: azure;
+  }
+  65% {
+    color: bisque;
+  }
+  80% {
+    color: rgb(179, 107, 20);
+  }
+  100% {
+    top: 30px;
+    color: #47b5ff;
+  }
+}
+
 @keyframes header-h1 {
   0% {
     top: -250px;
@@ -66,13 +98,32 @@ main {
 }
 .header > h2 {
   position: relative;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 2rem;
-  animation-name: header-h2;
-  animation-duration: 5s;
+  -webkit-animation-name: header-h2;
+          animation-name: header-h2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   text-shadow: -8px -5px 4px #47b5ff;
   color: rgba(66, 123, 206, 0.83);
   margin-bottom: 50px;
+}
+
+@-webkit-keyframes header-h2 {
+  0% {
+    left: -1500px;
+    visibility: hidden;
+  }
+  80% {
+    visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    left: 0px;
+    visibility: visible;
+  }
 }
 
 @keyframes header-h2 {
@@ -91,19 +142,34 @@ main {
     visibility: visible;
   }
 }
-
 .header-img {
   position: relative;
   width: 60%;
   border-radius: 50%;
-  animation-name: header-img;
-  animation-duration: 4s;
+  -webkit-animation-name: header-img;
+          animation-name: header-img;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   transition-property: transform;
   transition-duration: 1.5s;
 }
+
 .header-img:hover {
   transform: rotate(360deg);
 }
+
+@-webkit-keyframes header-img {
+  0% {
+    left: -1550px;
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 @keyframes header-img {
   0% {
     left: -1550px;
@@ -121,47 +187,67 @@ hr {
   width: 4%;
   margin: 50px auto;
 }
+
 p {
   font-size: 2.5rem;
   color: #47b5ff;
 }
+
 .hobbies {
   height: 200px;
   color: rgb(4, 31, 31);
 }
+
 span {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: rgb(51, 31, 165);
 }
+
 .click {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-weight: 900;
   font-size: 3.5rem;
   margin-top: 150px;
 }
+
 .games-flex {
   height: 300px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
 .game-p {
   width: 150px;
   font-size: 25px;
   align-self: center;
   order: 0;
 }
+
 .game-1 {
   position: relative;
   order: -1;
   flex-grow: 2;
-  animation: game-1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  -webkit-animation: game-1;
+          animation: game-1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
+
+@-webkit-keyframes game-1 {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
 @keyframes game-1 {
   0% {
     left: -400px;
@@ -173,16 +259,29 @@ span {
 .game-2 {
   position: relative;
   flex-grow: 2;
-  animation: game-2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  -webkit-animation: game-2;
+          animation: game-2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
+
+@-webkit-keyframes game-2 {
+  0% {
+    right: -400px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
 @keyframes game-2 {
   0% {
     right: -400px;
   }
-
   100% {
     right: 200px;
   }
@@ -190,29 +289,44 @@ span {
 .footer {
   height: 50px;
 }
+
 .footer img {
   height: 30px;
   margin-left: 15px;
   margin-bottom: 30px;
 }
+
 .footer img:hover {
   height: 50px;
 }
+
 .hidden {
   visibility: hidden;
 }
+
 .container {
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .box {
   margin: 15px auto;
   width: 90px;
   height: 90px;
   transform-style: preserve-3d;
-  animation: animate 20s linear infinite;
+  -webkit-animation: animate 20s linear infinite;
+          animation: animate 20s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
 }
 
 @keyframes animate {
@@ -233,25 +347,30 @@ span {
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
 }
+
 .box span img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .box span img:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   transition-duration: 1s;
 }
+
 .copyright {
   color: #12a5a5;
   font-size: 0.75rem;
   padding: 20px 0;
 }
+
 .form {
   margin-top: 2%;
   display: flex;
@@ -263,6 +382,7 @@ span {
 input {
   width: 200px;
 }
+
 #balloon-container {
   height: 50vh;
   padding: 1em;
@@ -280,7 +400,7 @@ input {
 }
 
 .balloon:before {
-  content: '';
+  content: "";
   height: 75px;
   width: 1px;
   padding: 1px;
@@ -294,7 +414,7 @@ input {
 }
 
 .balloon:after {
-  content: '▲';
+  content: "▲";
   text-align: center;
   display: block;
   position: absolute;
@@ -303,6 +423,17 @@ input {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@-webkit-keyframes float {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-300vh);
+    opacity: 0;
+  }
 }
 
 @keyframes float {
@@ -315,21 +446,21 @@ input {
     opacity: 0;
   }
 }
-
 .btn {
   margin: 10px auto;
   font-size: 2rem;
   width: 300px;
-
   border-radius: 10px;
   background-color: #62c7c7;
 }
+
 .connect {
   font-size: 2.5rem;
   border-radius: 10px;
   background-color: #c1dfdf;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
 }
+
 a {
   text-decoration: none;
-}
+}/*# sourceMappingURL=style.css.map */

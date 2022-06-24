@@ -371,6 +371,17 @@ span {
   padding: 20px 0;
 }
 
+.connect {
+  font-size: 2.5rem;
+  border-radius: 10px;
+  background-color: #c1dfdf;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 .form {
   margin-top: 2%;
   display: flex;
@@ -452,15 +463,4 @@ input {
   width: 300px;
   border-radius: 10px;
   background-color: #62c7c7;
-}
-
-.connect {
-  font-size: 2.5rem;
-  border-radius: 10px;
-  background-color: #c1dfdf;
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
-}
-
-a {
-  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
